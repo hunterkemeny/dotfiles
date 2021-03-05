@@ -18,11 +18,16 @@ export NODE_PATH="$NODE_PATH:$HOME/npm/lib/node_modules"
 PATH="/Library/Frameworks/Python.framework/Versions/3.8/bin:${PATH}"
 export PATH
 
+# Aliases
+alias life="cd Documents/Life"
+alias stem="cd Documents/Life/Education/Academic/STEM"
+alias projects="cs Documents/Life/Education/Academic/STEM/Technology/Projects"
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="jonathan"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -44,8 +49,6 @@ fasd)
 source $ZSH/oh-my-zsh.sh
 source /Users/hunterkemeny/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
-source ~/zsh-git-prompt/zshrc.sh
-PROMPT='%B%m%~%b$(git_super_status) %# '
 eval "$(fasd --init auto)"
 source /Users/hunterkemeny/.config/broot/launcher/bash/br
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

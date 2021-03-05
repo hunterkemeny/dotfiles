@@ -1,3 +1,5 @@
+set backspace=indent,eol,start
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'lervag/vimtex'
